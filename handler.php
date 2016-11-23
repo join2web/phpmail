@@ -54,7 +54,7 @@ if (!empty($errors)) {
     response($errors);
 }
 
-foreach ($email as $email) {
+foreach ($emails as $email) {
     mail($email, $subject, $message, $headers);
 }
 
